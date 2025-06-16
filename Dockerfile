@@ -6,5 +6,5 @@ RUN go build -o main .
 FROM alpine:latest
 WORKDIR /app
 COPY --from=builder /app/main .
-COPY data/transport.json ./data/transport.json  # If your app needs this file
+COPY data/transport.json ./data/transport.json
 CMD ["./main"]
