@@ -1,6 +1,7 @@
 FROM golang:1.24.4-alpine AS builder
 WORKDIR /app
 COPY . .
+RUN go mod download
 RUN go build -o transit-backend ./cmd/server/main.go
 
 FROM alpine:latest
