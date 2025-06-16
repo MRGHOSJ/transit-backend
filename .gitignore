@@ -1,0 +1,19 @@
+.DS_Store
+*.log
+*.env
+.env.local
+.env.development
+.env.production
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Backend (Go) specific
+/bin/
+/pkg/
+*.exe
+*.test
+*.prof
+vendor/
+go.sum
