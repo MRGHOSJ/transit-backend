@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: transit-backend
+    dockerfilePath: Dockerfile  # Path to your Dockerfile
+    envVars:
+      - key: PORT
+        value: 8081
