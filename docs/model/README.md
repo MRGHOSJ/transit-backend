@@ -1,39 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>model Package</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-<div class="container">
+# 📦 Package: `model`
 
-<div class="breadcrumbs">
-    <a href="../README.md">Home</a> &raquo; <span>model</span>
-</div>
+> 📍 `C:\Users\DELL\Desktop\transit-backend-main\internal\transport\model\transport.go`
 
-<div class="package-header">
-    <h1>📦 model</h1>
-    <p class="filepath"><i>C:\Users\DELL\Desktop\transit-backend-main\internal\transport\model\transport.go</i></p>
-</div>
+[← Back to Overview](../README.md)
 
-<div class="toc">
-    <h2>📑 Package Contents</h2>
-    <ul>
-        <li><a href="#structs">Structs (1)</a></li>    </ul>
-</div>
+## 📑 Contents
 
-<section id="structs" class="card">
-    <h2>🧱 Structs</h2>
-    <div class="struct-grid">
+- [🧱 Structs (1)](#-structs)
 
-        <div class="struct-card">
-            <h3>Connection</h3>
-            <div class="struct-details">
-                <pre><code>type Connection struct {
-}</code></pre>
-                <div class="doc-section">
-                    **Summary:** Empty struct representing a connection
+## 🧱 Structs
+
+### `Connection`
+
+```go
+type Connection struct {
+}
+```
+
+**Summary:** Empty struct representing a connection
 
 **Returns:** None (struct definition)
 
@@ -51,12 +35,5 @@ conn := Connection{}
 - May require extension for practical use
 
 
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+---
 
-</div>
-</body>
-</html>

@@ -1,40 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>server Package</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-<div class="container">
+# 📦 Package: `server`
 
-<div class="breadcrumbs">
-    <a href="../README.md">Home</a> &raquo; <span>server</span>
-</div>
+> 📍 `C:\Users\DELL\Desktop\transit-backend-main\cmd\server\main.go`
 
-<div class="package-header">
-    <h1>📦 server</h1>
-    <p class="filepath"><i>C:\Users\DELL\Desktop\transit-backend-main\cmd\server\main.go</i></p>
-</div>
+[← Back to Overview](../README.md)
 
-<div class="toc">
-    <h2>📑 Package Contents</h2>
-    <ul>
-        <li><a href="#functions">Functions (1)</a></li>    </ul>
-</div>
+## 📑 Contents
 
-<section id="functions" class="card">
-    <h2>🔧 Functions</h2>
-    <div class="func-accordion">
+- [🔧 Functions (1)](#-functions)
 
-        <div class="accordion-item">
-            <button class="accordion-btn" onclick="this.classList.toggle('active');
-                this.nextElementSibling.classList.toggle('show')">
-                <span class="func-name">main</span>
-                <span class="func-sig">()</span>
-            </button>
-            <div class="accordion-content">
-                **Summary:** Entry point of a Go program
+## 🔧 Functions
+
+<details>
+<summary><b><code>main()</code></b></summary>
+
+**Summary:** Entry point of a Go program
 
 **Returns:** None (executes program logic)
 
@@ -52,11 +31,5 @@ func main() { fmt.Println("Hello, World!") }
 - May panic if unhandled errors occur
 
 
-            </div>
-        </div>
-    </div>
-</section>
+</details>
 
-</div>
-</body>
-</html>

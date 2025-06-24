@@ -1,40 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>middleware Package</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-<div class="container">
+# 📦 Package: `middleware`
 
-<div class="breadcrumbs">
-    <a href="../README.md">Home</a> &raquo; <span>middleware</span>
-</div>
+> 📍 `C:\Users\DELL\Desktop\transit-backend-main\internal\middleware\middleware.go`
 
-<div class="package-header">
-    <h1>📦 middleware</h1>
-    <p class="filepath"><i>C:\Users\DELL\Desktop\transit-backend-main\internal\middleware\middleware.go</i></p>
-</div>
+[← Back to Overview](../README.md)
 
-<div class="toc">
-    <h2>📑 Package Contents</h2>
-    <ul>
-        <li><a href="#functions">Functions (3)</a></li>    </ul>
-</div>
+## 📑 Contents
 
-<section id="functions" class="card">
-    <h2>🔧 Functions</h2>
-    <div class="func-accordion">
+- [🔧 Functions (3)](#-functions)
 
-        <div class="accordion-item">
-            <button class="accordion-btn" onclick="this.classList.toggle('active');
-                this.nextElementSibling.classList.toggle('show')">
-                <span class="func-name">Logging</span>
-                <span class="func-sig">(next http.Handler)</span>
-            </button>
-            <div class="accordion-content">
-                **Summary:** HTTP middleware for request logging
+## 🔧 Functions
+
+<details>
+<summary><b><code>Logging(next http.Handler)</code></b></summary>
+
+**Summary:** HTTP middleware for request logging
 
 **Parameters:**
 - `next` (http.Handler): Next handler in the chain
@@ -55,17 +34,12 @@ router.Use(Logging)
 - Performance impact with high traffic
 
 
-            </div>
-        </div>
+</details>
 
-        <div class="accordion-item">
-            <button class="accordion-btn" onclick="this.classList.toggle('active');
-                this.nextElementSibling.classList.toggle('show')">
-                <span class="func-name">CORS</span>
-                <span class="func-sig">(next http.Handler)</span>
-            </button>
-            <div class="accordion-content">
-                **Summary:** HTTP middleware for CORS headers
+<details>
+<summary><b><code>CORS(next http.Handler)</code></b></summary>
+
+**Summary:** HTTP middleware for CORS headers
 
 **Parameters:**
 - `next` (http.Handler): Next handler in the chain
@@ -86,17 +60,12 @@ router.Use(CORS)
 - Preflight request handling
 
 
-            </div>
-        </div>
+</details>
 
-        <div class="accordion-item">
-            <button class="accordion-btn" onclick="this.classList.toggle('active');
-                this.nextElementSibling.classList.toggle('show')">
-                <span class="func-name">Recoverer</span>
-                <span class="func-sig">(next http.Handler)</span>
-            </button>
-            <div class="accordion-content">
-                **Summary:** HTTP middleware for panic recovery
+<details>
+<summary><b><code>Recoverer(next http.Handler)</code></b></summary>
+
+**Summary:** HTTP middleware for panic recovery
 
 **Parameters:**
 - `next` (http.Handler): Next handler in the chain
@@ -117,11 +86,5 @@ router.Use(Recoverer)
 - Recovery from specific panic types
 
 
-            </div>
-        </div>
-    </div>
-</section>
+</details>
 
-</div>
-</body>
-</html>

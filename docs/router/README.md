@@ -1,40 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>router Package</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-<div class="container">
+# 📦 Package: `router`
 
-<div class="breadcrumbs">
-    <a href="../README.md">Home</a> &raquo; <span>router</span>
-</div>
+> 📍 `C:\Users\DELL\Desktop\transit-backend-main\internal\router\router.go`
 
-<div class="package-header">
-    <h1>📦 router</h1>
-    <p class="filepath"><i>C:\Users\DELL\Desktop\transit-backend-main\internal\router\router.go</i></p>
-</div>
+[← Back to Overview](../README.md)
 
-<div class="toc">
-    <h2>📑 Package Contents</h2>
-    <ul>
-        <li><a href="#functions">Functions (1)</a></li>    </ul>
-</div>
+## 📑 Contents
 
-<section id="functions" class="card">
-    <h2>🔧 Functions</h2>
-    <div class="func-accordion">
+- [🔧 Functions (1)](#-functions)
 
-        <div class="accordion-item">
-            <button class="accordion-btn" onclick="this.classList.toggle('active');
-                this.nextElementSibling.classList.toggle('show')">
-                <span class="func-name">Setup</span>
-                <span class="func-sig">(data *model.Data)</span>
-            </button>
-            <div class="accordion-content">
-                **Summary:** Configures HTTP router with application data
+## 🔧 Functions
+
+<details>
+<summary><b><code>Setup(data *model.Data)</code></b></summary>
+
+**Summary:** Configures HTTP router with application data
 
 **Parameters:**
 - `data` (*model.Data): Application data structure
@@ -55,11 +34,5 @@ router := Setup(appData)
 - Route collision detection
 
 
-            </div>
-        </div>
-    </div>
-</section>
+</details>
 
-</div>
-</body>
-</html>

@@ -1,40 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>components Package</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-<div class="container">
+# 📦 Package: `components`
 
-<div class="breadcrumbs">
-    <a href="../README.md">Home</a> &raquo; <span>components</span>
-</div>
+> 📍 `C:\Users\DELL\Desktop\transit-backend-main\internal\transport\components\component.go`
 
-<div class="package-header">
-    <h1>📦 components</h1>
-    <p class="filepath"><i>C:\Users\DELL\Desktop\transit-backend-main\internal\transport\components\component.go</i></p>
-</div>
+[← Back to Overview](../README.md)
 
-<div class="toc">
-    <h2>📑 Package Contents</h2>
-    <ul>
-        <li><a href="#functions">Functions (1)</a></li>    </ul>
-</div>
+## 📑 Contents
 
-<section id="functions" class="card">
-    <h2>🔧 Functions</h2>
-    <div class="func-accordion">
+- [🔧 Functions (1)](#-functions)
 
-        <div class="accordion-item">
-            <button class="accordion-btn" onclick="this.classList.toggle('active');
-                this.nextElementSibling.classList.toggle('show')">
-                <span class="func-name">HaversineDistance</span>
-                <span class="func-sig">(lat1 float64, lon1 float64, lat2 float64, lon2 float64)</span>
-            </button>
-            <div class="accordion-content">
-                **Summary:** Calculates Haversine distance between two geographic coordinates
+## 🔧 Functions
+
+<details>
+<summary><b><code>HaversineDistance(lat1 float64, lon1 float64, lat2 float64, lon2 float64)</code></b></summary>
+
+**Summary:** Calculates Haversine distance between two geographic coordinates
 
 **Parameters:**
 - `lat1` (float64): Latitude of first point
@@ -59,11 +38,5 @@ dist := HaversineDistance(52.5200, 13.4050, 48.8566, 2.3522) // Berlin to Paris
 - Invalid coordinate ranges (lat outside [-90,90])
 
 
-            </div>
-        </div>
-    </div>
-</section>
+</details>
 
-</div>
-</body>
-</html>

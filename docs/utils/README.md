@@ -1,40 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>utils Package</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-<div class="container">
+# 📦 Package: `utils`
 
-<div class="breadcrumbs">
-    <a href="../README.md">Home</a> &raquo; <span>utils</span>
-</div>
+> 📍 `C:\Users\DELL\Desktop\transit-backend-main\internal\utils\loader.go`
 
-<div class="package-header">
-    <h1>📦 utils</h1>
-    <p class="filepath"><i>C:\Users\DELL\Desktop\transit-backend-main\internal\utils\loader.go</i></p>
-</div>
+[← Back to Overview](../README.md)
 
-<div class="toc">
-    <h2>📑 Package Contents</h2>
-    <ul>
-        <li><a href="#functions">Functions (1)</a></li>    </ul>
-</div>
+## 📑 Contents
 
-<section id="functions" class="card">
-    <h2>🔧 Functions</h2>
-    <div class="func-accordion">
+- [🔧 Functions (1)](#-functions)
 
-        <div class="accordion-item">
-            <button class="accordion-btn" onclick="this.classList.toggle('active');
-                this.nextElementSibling.classList.toggle('show')">
-                <span class="func-name">LoadTransportData</span>
-                <span class="func-sig">(path string)</span>
-            </button>
-            <div class="accordion-content">
-                **Summary:** Loads transport data from a file
+## 🔧 Functions
+
+<details>
+<summary><b><code>LoadTransportData(path string)</code></b></summary>
+
+**Summary:** Loads transport data from a file
 
 **Parameters:**
 - `path` (string): File path to load data from
@@ -55,11 +34,5 @@ data, err := LoadTransportData('routes.json')
 - Malformed data returns parsing error
 
 
-            </div>
-        </div>
-    </div>
-</section>
+</details>
 
-</div>
-</body>
-</html>

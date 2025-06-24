@@ -1,39 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>service Package</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-<div class="container">
+# 📦 Package: `service`
 
-<div class="breadcrumbs">
-    <a href="../README.md">Home</a> &raquo; <span>service</span>
-</div>
+> 📍 `C:\Users\DELL\Desktop\transit-backend-main\internal\transport\service\route_planner.go`
 
-<div class="package-header">
-    <h1>📦 service</h1>
-    <p class="filepath"><i>C:\Users\DELL\Desktop\transit-backend-main\internal\transport\service\route_planner.go</i></p>
-</div>
+[← Back to Overview](../README.md)
 
-<div class="toc">
-    <h2>📑 Package Contents</h2>
-    <ul>
-        <li><a href="#structs">Structs (1)</a></li>        <li><a href="#functions">Functions (6)</a></li>    </ul>
-</div>
+## 📑 Contents
 
-<section id="structs" class="card">
-    <h2>🧱 Structs</h2>
-    <div class="struct-grid">
+- [🧱 Structs (1)](#-structs)
+- [🔧 Functions (6)](#-functions)
 
-        <div class="struct-card">
-            <h3>RoutePlanner</h3>
-            <div class="struct-details">
-                <pre><code>type RoutePlanner struct {
-}</code></pre>
-                <div class="doc-section">
-                    **Summary:** Empty struct for route planning functionality
+## 🧱 Structs
+
+### `RoutePlanner`
+
+```go
+type RoutePlanner struct {
+}
+```
+
+**Summary:** Empty struct for route planning functionality
 
 **Returns:** N/A (type definition)
 
@@ -51,24 +36,14 @@ planner := RoutePlanner{}
 - Uninitialized field dependencies
 
 
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+---
 
-<section id="functions" class="card">
-    <h2>🔧 Functions</h2>
-    <div class="func-accordion">
+## 🔧 Functions
 
-        <div class="accordion-item">
-            <button class="accordion-btn" onclick="this.classList.toggle('active');
-                this.nextElementSibling.classList.toggle('show')">
-                <span class="func-name">NewRoutePlanner</span>
-                <span class="func-sig">(graph *Graph)</span>
-            </button>
-            <div class="accordion-content">
-                **Summary:** Creates a new RoutePlanner instance with a given graph
+<details>
+<summary><b><code>NewRoutePlanner(graph *Graph)</code></b></summary>
+
+**Summary:** Creates a new RoutePlanner instance with a given graph
 
 **Parameters:**
 - `graph` (*Graph): Graph structure representing the transport network
@@ -88,17 +63,12 @@ planner := NewRoutePlanner(myGraph)
 - Nil graph input may cause initialization issues
 
 
-            </div>
-        </div>
+</details>
 
-        <div class="accordion-item">
-            <button class="accordion-btn" onclick="this.classList.toggle('active');
-                this.nextElementSibling.classList.toggle('show')">
-                <span class="func-name">getPreferences</span>
-                <span class="func-sig">(mode string)</span>
-            </button>
-            <div class="accordion-content">
-                **Summary:** Retrieves transport preferences for a given mode
+<details>
+<summary><b><code>getPreferences(mode string)</code></b></summary>
+
+**Summary:** Retrieves transport preferences for a given mode
 
 **Parameters:**
 - `mode` (string): Transport mode (e.g., 'walking', 'driving')
@@ -118,17 +88,12 @@ prefs := planner.getPreferences('biking')
 - Unsupported mode string may return default preferences
 
 
-            </div>
-        </div>
+</details>
 
-        <div class="accordion-item">
-            <button class="accordion-btn" onclick="this.classList.toggle('active');
-                this.nextElementSibling.classList.toggle('show')">
-                <span class="func-name">FindRoutes</span>
-                <span class="func-sig">(fromLat float64, fromLng float64, toLat float64, toLng float64, modes []model.TransportType, prefsParam string)</span>
-            </button>
-            <div class="accordion-content">
-                **Summary:** Finds route options between two geographic points
+<details>
+<summary><b><code>FindRoutes(fromLat float64, fromLng float64, toLat float64, toLng float64, modes []model.TransportType, prefsParam string)</code></b></summary>
+
+**Summary:** Finds route options between two geographic points
 
 **Parameters:**
 - `fromLat` (float64): Origin latitude
@@ -155,17 +120,12 @@ routes, err := planner.FindRoutes(40.7, -74.0, 34.0, -118.0, []model.TransportTy
 - Empty transport modes slice
 
 
-            </div>
-        </div>
+</details>
 
-        <div class="accordion-item">
-            <button class="accordion-btn" onclick="this.classList.toggle('active');
-                this.nextElementSibling.classList.toggle('show')">
-                <span class="func-name">findNearestAccessPoints</span>
-                <span class="func-sig">(lat float64, lng float64, modes []model.TransportType)</span>
-            </button>
-            <div class="accordion-content">
-                **Summary:** Finds nearest transport access points to a location
+<details>
+<summary><b><code>findNearestAccessPoints(lat float64, lng float64, modes []model.TransportType)</code></b></summary>
+
+**Summary:** Finds nearest transport access points to a location
 
 **Parameters:**
 - `lat` (float64): Target latitude
@@ -189,17 +149,12 @@ connections := planner.findNearestAccessPoints(51.5, -0.1, []model.TransportType
 - Invalid coordinates
 
 
-            </div>
-        </div>
+</details>
 
-        <div class="accordion-item">
-            <button class="accordion-btn" onclick="this.classList.toggle('active');
-                this.nextElementSibling.classList.toggle('show')">
-                <span class="func-name">countTransfers</span>
-                <span class="func-sig">(segments []model.RouteSegment)</span>
-            </button>
-            <div class="accordion-content">
-                **Summary:** Counts the number of transfers in a route
+<details>
+<summary><b><code>countTransfers(segments []model.RouteSegment)</code></b></summary>
+
+**Summary:** Counts the number of transfers in a route
 
 **Parameters:**
 - `segments` ([]model.RouteSegment): List of route segments to analyze
@@ -220,17 +175,12 @@ transfers := planner.countTransfers(segments) // returns 2
 - Direct route with no transfers returns 0
 
 
-            </div>
-        </div>
+</details>
 
-        <div class="accordion-item">
-            <button class="accordion-btn" onclick="this.classList.toggle('active');
-                this.nextElementSibling.classList.toggle('show')">
-                <span class="func-name">getInstructions</span>
-                <span class="func-sig">(conn model.Connection, from model.Station, to model.Station)</span>
-            </button>
-            <div class="accordion-content">
-                **Summary:** Generates navigation instructions for a connection
+<details>
+<summary><b><code>getInstructions(conn model.Connection, from model.Station, to model.Station)</code></b></summary>
+
+**Summary:** Generates navigation instructions for a connection
 
 **Parameters:**
 - `conn` (model.Connection): Connection details
@@ -253,11 +203,5 @@ instructions := planner.getInstructions(conn, from, to) // returns 'Take line A 
 - Same from/to station returns 'Already at destination'
 
 
-            </div>
-        </div>
-    </div>
-</section>
+</details>
 
-</div>
-</body>
-</html>

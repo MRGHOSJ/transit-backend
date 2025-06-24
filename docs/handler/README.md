@@ -1,39 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>handler Package</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-<div class="container">
+# 📦 Package: `handler`
 
-<div class="breadcrumbs">
-    <a href="../README.md">Home</a> &raquo; <span>handler</span>
-</div>
+> 📍 `C:\Users\DELL\Desktop\transit-backend-main\internal\transport\handler\route_handler.go`
 
-<div class="package-header">
-    <h1>📦 handler</h1>
-    <p class="filepath"><i>C:\Users\DELL\Desktop\transit-backend-main\internal\transport\handler\route_handler.go</i></p>
-</div>
+[← Back to Overview](../README.md)
 
-<div class="toc">
-    <h2>📑 Package Contents</h2>
-    <ul>
-        <li><a href="#structs">Structs (1)</a></li>        <li><a href="#functions">Functions (4)</a></li>    </ul>
-</div>
+## 📑 Contents
 
-<section id="structs" class="card">
-    <h2>🧱 Structs</h2>
-    <div class="struct-grid">
+- [🧱 Structs (1)](#-structs)
+- [🔧 Functions (4)](#-functions)
 
-        <div class="struct-card">
-            <h3>RouteHandler</h3>
-            <div class="struct-details">
-                <pre><code>type RouteHandler struct {
-}</code></pre>
-                <div class="doc-section">
-                    **Summary:** Empty struct defining a route handler type
+## 🧱 Structs
+
+### `RouteHandler`
+
+```go
+type RouteHandler struct {
+}
+```
+
+**Summary:** Empty struct defining a route handler type
 
 **Returns:** None (type definition)
 
@@ -51,24 +36,14 @@ handler := RouteHandler{}
 - Requires method implementations
 
 
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+---
 
-<section id="functions" class="card">
-    <h2>🔧 Functions</h2>
-    <div class="func-accordion">
+## 🔧 Functions
 
-        <div class="accordion-item">
-            <button class="accordion-btn" onclick="this.classList.toggle('active');
-                this.nextElementSibling.classList.toggle('show')">
-                <span class="func-name">NewRouteHandler</span>
-                <span class="func-sig">(planner *service.RoutePlanner)</span>
-            </button>
-            <div class="accordion-content">
-                **Summary:** Constructor for RouteHandler with dependency injection
+<details>
+<summary><b><code>NewRouteHandler(planner *service.RoutePlanner)</code></b></summary>
+
+**Summary:** Constructor for RouteHandler with dependency injection
 
 **Parameters:**
 - `planner` (*service.RoutePlanner): Route planning service dependency
@@ -89,17 +64,12 @@ handler := NewRouteHandler(myRoutePlanner)
 - Memory allocation failure
 
 
-            </div>
-        </div>
+</details>
 
-        <div class="accordion-item">
-            <button class="accordion-btn" onclick="this.classList.toggle('active');
-                this.nextElementSibling.classList.toggle('show')">
-                <span class="func-name">GetRoutes</span>
-                <span class="func-sig">(w http.ResponseWriter, r *http.Request)</span>
-            </button>
-            <div class="accordion-content">
-                **Summary:** HTTP handler method for retrieving routes
+<details>
+<summary><b><code>GetRoutes(w http.ResponseWriter, r *http.Request)</code></b></summary>
+
+**Summary:** HTTP handler method for retrieving routes
 
 **Parameters:**
 - `w` (http.ResponseWriter): Response writer interface
@@ -122,17 +92,12 @@ router.HandleFunc("/routes", handler.GetRoutes)
 - Response writer errors
 
 
-            </div>
-        </div>
+</details>
 
-        <div class="accordion-item">
-            <button class="accordion-btn" onclick="this.classList.toggle('active');
-                this.nextElementSibling.classList.toggle('show')">
-                <span class="func-name">response</span>
-                <span class="func-sig">(w http.ResponseWriter, status int, data )</span>
-            </button>
-            <div class="accordion-content">
-                **Summary:** Helper method for sending HTTP responses
+<details>
+<summary><b><code>response(w http.ResponseWriter, status int, data )</code></b></summary>
+
+**Summary:** Helper method for sending HTTP responses
 
 **Parameters:**
 - `w` (http.ResponseWriter): Response writer interface
@@ -156,17 +121,12 @@ handler.response(w, http.StatusOK, routes)
 - Response writer errors
 
 
-            </div>
-        </div>
+</details>
 
-        <div class="accordion-item">
-            <button class="accordion-btn" onclick="this.classList.toggle('active');
-                this.nextElementSibling.classList.toggle('show')">
-                <span class="func-name">errorResponse</span>
-                <span class="func-sig">(w http.ResponseWriter, status int, message string)</span>
-            </button>
-            <div class="accordion-content">
-                **Summary:** Sends an HTTP error response with status and message
+<details>
+<summary><b><code>errorResponse(w http.ResponseWriter, status int, message string)</code></b></summary>
+
+**Summary:** Sends an HTTP error response with status and message
 
 **Parameters:**
 - `w` (http.ResponseWriter): HTTP response writer
@@ -189,11 +149,5 @@ errorResponse(w, 404, "Page not found")
 - Large messages causing buffer issues
 
 
-            </div>
-        </div>
-    </div>
-</section>
+</details>
 
-</div>
-</body>
-</html>
