@@ -15,10 +15,16 @@
 
 ```go
 type transportRepository struct {
+	data *model.Data 
+	typeIndex model.TypeIndex 
 }
 ```
 
-**Summary:** Empty struct for transport repository
+**Summary:** Repository struct holding transport data and type index.
+
+**Parameters:**
+- `data` (*model.Data): Pointer to transport dataset
+- `typeIndex` (model.TypeIndex): Index of transport types
 
 **Returns:** None (struct definition)
 
@@ -28,12 +34,13 @@ type transportRepository struct {
 
 **Example:**
 ```go
-repo := transportRepository{}
+repo := transportRepository{data: &dataset, typeIndex: index}
 ```
 
 **Edge Cases:**
-- Lacks implementation details
-- May be part of an interface pattern
+- Nil data pointer
+- Empty or corrupted typeIndex
+- Concurrent access issues
 
 
 ---

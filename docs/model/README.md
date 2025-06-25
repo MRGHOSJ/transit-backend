@@ -14,10 +14,22 @@
 
 ```go
 type Connection struct {
+	StationKey string json:"station_id
+	Distance float64 json:"distance
+	Type TransportType json:"type
+	Line string json:"line,omitempty
+	Duration float64 json:"duration
 }
 ```
 
-**Summary:** Empty struct representing a connection
+**Summary:** Defines a Connection struct linking stations with distance and duration.
+
+**Parameters:**
+- `StationKey` (string): Connected station identifier
+- `Distance` (float64): Distance between stations
+- `Type` (TransportType): Connection transport type
+- `Line` (string): Transport line (optional)
+- `Duration` (float64): Travel duration in minutes
 
 **Returns:** None (struct definition)
 
@@ -27,12 +39,13 @@ type Connection struct {
 
 **Example:**
 ```go
-conn := Connection{}
+conn := Connection{StationKey: "s123", Distance: 1.2, Duration: 5.0}
 ```
 
 **Edge Cases:**
-- No fields may limit functionality
-- May require extension for practical use
+- Zero/negative Distance/Duration
+- Empty StationKey
+- Invalid TransportType
 
 
 ---

@@ -15,25 +15,29 @@
 
 ```go
 type RoutePlanner struct {
+	graph *Graph 
 }
 ```
 
-**Summary:** Empty struct for route planning functionality
+**Summary:** Route planning component with graph dependency
 
-**Returns:** N/A (type definition)
+**Parameters:**
+- `graph` (*Graph): Reference to graph structure
+
+**Returns:** None (type definition)
 
 **Complexity:**
-- Time: N/A
-- Space: O(1) (zero-sized type)
+- Time: N/A (type definition)
+- Space: O(1)
 
 **Example:**
 ```go
-planner := RoutePlanner{}
+planner := RoutePlanner{graph: stationGraph}
 ```
 
 **Edge Cases:**
-- Methods may need nil receiver checks
-- Uninitialized field dependencies
+- Nil graph reference
+- Concurrent modification of underlying graph
 
 
 ---

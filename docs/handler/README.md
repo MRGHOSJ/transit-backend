@@ -15,12 +15,16 @@
 
 ```go
 type RouteHandler struct {
+	routePlanner *service.RoutePlanner 
 }
 ```
 
-**Summary:** Empty struct defining a route handler type
+**Summary:** Struct that holds a reference to a route planner service.
 
-**Returns:** None (type definition)
+**Parameters:**
+- `routePlanner` (*service.RoutePlanner): Reference to the route planner service
+
+**Returns:** None (struct definition)
 
 **Complexity:**
 - Time: O(1)
@@ -28,12 +32,12 @@ type RouteHandler struct {
 
 **Example:**
 ```go
-handler := RouteHandler{}
+handler := RouteHandler{routePlanner: svc}
 ```
 
 **Edge Cases:**
-- No functionality defined yet
-- Requires method implementations
+- Nil routePlanner reference
+- Uninitialized routePlanner
 
 
 ---
